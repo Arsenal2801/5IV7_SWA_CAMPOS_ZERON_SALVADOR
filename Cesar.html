@@ -8,14 +8,22 @@
     <title>Cifrado Cesar</title>
 </head>
 <body>
-    Este es un ejemplo del algoritmo cesar.
-    <br>
-    <textarea id="cadena" ></textarea>
-
-    <p><input type="button" value="Cifrar" onclick="codificar()" >
-    <input type="button" value="Decifrar" onclick="decodificar()" > </p>
-
-    <div id="resultado" ></div> 
-    <script src="js/cesar.js" ></script>
+    <div class="main">
+        <video src="multimedia/Blue  Burbujas 4K Background.mp4"></video>
+        <section class="cifrado" id="Cesar">
+            <h2>Cesar</h2>
+            <div class="contenedor">
+                <div class="entradaDatos">
+                    <p class="error">Ingresa el texto que desea cifrar/decifrar</p>
+                    <input type="text">
+                    <button>Cifrar</button>
+                    <button>Descifrar</button>
+                </div>
+                <div class="salida">
+                    <input type="text" readonly>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
