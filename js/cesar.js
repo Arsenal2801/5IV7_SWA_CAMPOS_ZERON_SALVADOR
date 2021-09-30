@@ -61,9 +61,11 @@ let cesar = ( function() {
 
 // funtion de cifrado
 function codificar( ){
-    document.getElementById( 'resultado' ).innerHTML = cesar.encode( document.getElementById( 'cadena' ).value, 3 );
+    document.getElementById( 'resultado' ).value = cesar.encode( document.getElementById( 'cadena' ).value, parseInt(document.getElementById( 'desp' ).value));
+
+    console.log(cesar.encode( document.getElementById( 'cadena' ).value, parseInt(document.getElementById( 'desp' ).value)))
 };
 
 function decodificar( ){
-    document.getElementById( 'resultado' ).innerHTML = cesar.decode( document.getElementById( 'cadena' ).value, 3 );
+    document.getElementById( 'resultado' ).value = cesar.decode( document.getElementById( 'cadena' ).value, parseInt(document.getElementById( 'desp' ).value));
 };

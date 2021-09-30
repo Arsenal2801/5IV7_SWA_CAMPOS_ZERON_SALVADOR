@@ -4,26 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
     <title>Cifrado Cesar</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+    <script src="./js/cesar.js"></script>
 </head>
 <body>
     <div class="main">
-        <video src="multimedia/Blue  Burbujas 4K Background.mp4"></video>
-        <section class="cifrado" id="Cesar">
-            <h2>Cesar</h2>
-            <div class="contenedor">
-                <div class="entradaDatos">
-                    <p class="error">Ingresa el texto que desea cifrar/decifrar</p>
-                    <input type="text">
-                    <button>Cifrar</button>
-                    <button>Descifrar</button>
-                </div>
-                <div class="salida">
-                    <input type="text" readonly>
-                </div>
+        <h1>Cifrado <br> Cesar</h1>
+        <div class="contenedor">
+
+            <div class="opciones">
+                <input type="text" id="cadena" placeholder="texto a cifrar"><br>
+                <input type="number" id="desp" placeholder="desplaxamiento del cifrado">
             </div>
-        </section>
+
+            <div class="botonesC">
+                <button onclick="codificar()">Cifrar</button>
+                <button onclick="decodificar()">Descifrar</button>
+            </div>
+
+            <div class="textoCifrado">
+                <input type="text" id="resultado" readonly>
+            </div>
+        </div>
     </div>
 </body>
 </html>
