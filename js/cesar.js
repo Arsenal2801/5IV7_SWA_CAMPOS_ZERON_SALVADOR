@@ -62,8 +62,6 @@ let cesar = ( function() {
 // funtion de cifrado
 function codificar( ){
     document.getElementById( 'resultado' ).value = cesar.encode( document.getElementById( 'cadena' ).value, parseInt(document.getElementById( 'desp' ).value));
-
-    console.log(cesar.encode( document.getElementById( 'cadena' ).value, parseInt(document.getElementById( 'desp' ).value)))
 };
 
 function decodificar( ){
